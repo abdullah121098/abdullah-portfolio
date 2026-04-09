@@ -29,7 +29,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden glass border border-white/10 relative z-10 shadow-2xl">
               <img
-                src="public/image.png"
+                src="/image.png"
                 alt="Abdullah Mohamed Yousuf M"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"

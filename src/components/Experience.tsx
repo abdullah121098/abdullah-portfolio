@@ -5,7 +5,7 @@ const experiences = [
   {
     company: "Dafy Online Pvt Ltd",
     role: "Frontend Developer & React.js Specialist",
-    period: "Present",
+    period: "Early Career",
     location: "Remote",
     desc: "Leading frontend development initiatives, building responsive web applications with React.js, and providing critical production support. Specialized in creating seamless user experiences and ensuring high application performance.",
     isPrimary: true,
@@ -13,7 +13,7 @@ const experiences = [
   {
     company: "Ison Xperience",
     role: "Technical Support Associate",
-    period: "Previous",
+    period: "Early Career",
     location: "On-site",
     desc: "Handled technical operations, client communication, and deployment support. Focused on resolving complex technical issues and maintaining high service standards for enterprise clients.",
     isPrimary: false,
@@ -21,9 +21,17 @@ const experiences = [
   {
     company: "ACSASS Pvt Ltd",
     role: "Junior Developer",
-    period: "Early Career",
+    period: "Previous",
     location: "On-site",
     desc: "Assisted in web development projects, debugging code, and supporting deployment processes. Gained foundational experience in frontend technologies and team collaboration.",
+    isPrimary: false,
+  },
+  {
+    company: "Phifer Mosquito Screens - Chennai",
+    role: "Back Office Sales Coordinator",
+    period: "Present",
+    location: "On-site",
+    desc: "Back Office Sales Coordinator both Inbound and Outbound.",
     isPrimary: false,
   },
 ];
@@ -54,16 +62,14 @@ export default function Experience() {
                 className="relative pl-20 group"
               >
                 {/* Git Commit Icon */}
-                <div className={`absolute left-4 top-0 p-2 rounded-full z-10 transition-all duration-500 ${
-                  exp.isPrimary ? "bg-accent text-white glow-blue scale-125" : "bg-surface text-accent border border-accent/30 group-hover:bg-accent group-hover:text-white"
-                }`}>
+                <div className={`absolute left-4 top-0 p-2 rounded-full z-10 transition-all duration-500 ${exp.isPrimary ? "bg-accent text-white glow-blue scale-125" : "bg-surface text-accent border border-accent/30 group-hover:bg-accent group-hover:text-white"
+                  }`}>
                   <GitCommit className="w-6 h-6" />
                 </div>
 
                 {/* Experience Card */}
-                <div className={`glass-card p-8 hover:border-accent/50 transition-all duration-300 ${
-                  exp.isPrimary ? "border-accent/30 bg-accent/5" : ""
-                }`}>
+                <div className={`glass-card p-8 hover:border-accent/50 transition-all duration-300 ${exp.isPrimary ? "border-accent/30 bg-accent/5" : ""
+                  }`}>
                   <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
                     <div className="space-y-1">
                       <h3 className="text-2xl font-bold text-white group-hover:text-accent transition-colors duration-300">{exp.company}</h3>
@@ -86,7 +92,7 @@ export default function Experience() {
                   <p className="text-text-muted leading-relaxed text-lg italic">
                     "{exp.desc}"
                   </p>
-                  
+
                   {exp.isPrimary && (
                     <div className="mt-6 pt-6 border-t border-white/5 flex flex-wrap gap-2">
                       <span className="text-xs font-mono px-3 py-1 bg-accent/10 rounded-full text-accent border border-accent/20">React.js</span>
